@@ -8,18 +8,13 @@ alias pbpaste='xclip -selection clipboard -o'
 
 # GIT
 alias g="git"
-alias giul='git pull'
-alias gius='git push'
-alias giusc='git push origin (git symbolic-ref --short -q HEAD)'
-alias giad='git add'
-alias gico='git commit'
-alias gidi='git diff --color'
-alias gidiw='git diff --color-words'
-alias gilo='git log'
-alias gist='git status'
-
-# show pretty history with tags
-alias gihist="git log --pretty=tformat:'%ad %Cgreen%s %Cblue%an %Cred%d%Creset' --graph --date=short"
+alias gpu='git pull'
+alias gp='git push'
+alias gpc='git push origin (git symbolic-ref --short -q HEAD)'
+alias gad='git add'
+alias gco='git commit'
+alias gdi='git diff --color'
+alias gst='git status'
 
 # List all files colorized in long format
 alias l="ls -lF --color"
@@ -34,7 +29,6 @@ alias lsd="ls -lF --color | grep --color=never '^d'"
 alias ls="command ls --color"
 
 # Always enable colored `grep` output
-# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -45,4 +39,5 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
+
 alias mux tmuxinator
