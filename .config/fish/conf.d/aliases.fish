@@ -7,6 +7,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 # GIT
+alias ts="tig status"
 alias g="git"
 alias gpu='git pull'
 alias gp='git push'
